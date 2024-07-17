@@ -3,6 +3,8 @@ import { Inter as FontSans } from "next/font/google"
 import "./globals.css";
 import { cn } from "@/lib/utils";
 import NavigationBar from "@/components/nav-bar";
+import { ThemeProvider } from "@/context/theme-provider";
+
 
 const fontSans = FontSans({
   subsets: ["latin"],
@@ -26,10 +28,17 @@ export default function RootLayout({
           "min-h-screen bg-background font-sans antialiased",
           fontSans.variable
         )}>
-        <div className="border-b-[2.5px] shadow-lg shadow-gray-50">
-          <NavigationBar />
-        </div>
-        {children}
+        <ThemeProvider
+          attribute="class"
+          defaultTheme="light"
+          enableSystem
+          disableTransitionOnChange
+        >
+          <div className="border-b-[2.5px] shadow-lg shadow-gray-50">
+            <NavigationBar />
+          </div>
+          {children}
+        </ThemeProvider>
       </body>
     </html>
   );
