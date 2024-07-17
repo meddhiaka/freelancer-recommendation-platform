@@ -3,6 +3,7 @@ namespace Mockup {
         id: string,
         firstName: string,
         lastName: string,
+        description: string,
         role: string,
         profilePicture: string
     }
