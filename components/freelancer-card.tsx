@@ -8,8 +8,9 @@ import {
 import Image from "next/image"
 import { Button } from "@/components/ui/button"
 import { Badge } from "./ui/badge"
+import Link from "next/link"
 
-export function FreelancerCard({freelancer}: {freelancer: Mockup.ICard}) {
+export function FreelancerCard({ freelancer }: { freelancer: Mockup.ICard }) {
     return (
         <Card className="w-[400px] rounded-none space-y-1">
             <CardHeader className="pt-2 pb-3 px-3 flex flex-row justify-between">
@@ -24,7 +25,11 @@ export function FreelancerCard({freelancer}: {freelancer: Mockup.ICard}) {
                     variant="secondary"
                     className="font-bold text-lg rounded-none text-primary"
                 >
-                    Voir
+                    <Link
+                        href="/profile/99"
+                        prefetch={true}>
+                        Voir
+                    </Link>
                 </Button>
             </CardHeader>
             <CardContent className="py-1 px-3">
