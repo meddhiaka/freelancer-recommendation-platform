@@ -3,7 +3,8 @@ import Link from "next/link";
 import { usePathname } from "next/navigation"
 
 export default function NavigationBar() {
-    const pathname: string = usePathname();
+    let pathname: string = usePathname();
+    pathname = pathname.includes("/profile/") == true || pathname == "/" ? "/" : ""
     return (
         <div className="max-w-screen-xl mx-auto my-5">
             <nav className="flex space-x-8">
