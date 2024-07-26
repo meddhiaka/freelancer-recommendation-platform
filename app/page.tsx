@@ -15,7 +15,6 @@ export default function Home() {
             <FreelancerCard key={e.id} freelancer={e} />
           ))
         }
-        
       </section>
     </main>
   );
