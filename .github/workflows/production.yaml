@@ -8,17 +8,17 @@ env:
 # that is why i commented the push branches main sub tree ...
 
 on:
-  #push:
-    #branches:
-      #- main
-  pull_request:
-    types: [closed]
+  push:
+    branches:
+      - main
+  #pull_request:
+    #types: [closed]
   
 jobs:
   DeployProduction:
     # so it will run this workflow only new pull request is merged into main
     # branch coming from another secondary branch ...
-    if: github.event.pull_request.merged == true && github.event.base.ref == "main"
+    #if: github.event.pull_request.merged == true && github.event.base.ref == "main"
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
