@@ -12,7 +12,7 @@ import Link from "next/link"
 
 export function FreelancerCard({ freelancer }: { freelancer: Mockup.ICard }) {
     return (
-        <Card className="w-[400px] rounded-none space-y-1">
+        <Card className="mx-2 md:mx-0 w-[400px] rounded-none space-y-1">
             <CardHeader className="pt-2 pb-3 px-3 flex flex-row justify-between">
                 <Image
                     src={freelancer.profilePicture}
