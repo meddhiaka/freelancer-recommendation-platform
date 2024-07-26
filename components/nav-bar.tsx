@@ -6,8 +6,8 @@ export default function NavigationBar() {
     let pathname: string = usePathname();
     pathname = pathname.includes("/profile/") == true || pathname == "/" ? "/" : ""
     return (
-        <div className="max-w-screen-xl mx-auto my-5">
-            <nav className="flex space-x-8">
+        <div className="max-w-screen-xl mx-auto my-5 px-2">
+            <nav className="flex space-x-3 sm:space-x-8">
                 <div className="text-4xl font-medium">
                     <Link
                         href="/"
@@ -16,7 +16,7 @@ export default function NavigationBar() {
                         LOGO
                     </Link>
                 </div>
-                <ul className="flex space-x-7 items-center">
+                <ul className="flex space-x-3 items-center">
                     <li>
                         <Link
                             className={`${pathname == "/" ? "text-primary underline decoration-2" : ""}  font-semibold text-sm`}
