@@ -136,7 +136,7 @@ export default function FreelancerPage() {
             <section className="basis-2/3 border rounded-sm space-y-4">
                 <div className="border-b">
                     <div className="w-11/12 mx-auto ">
-                        <p className="py-2 border-b-primary border-b-[3px] w-36 text-sm font-semibold tracking-wide">Profile d'applicant</p>
+                        <p className="py-2 border-b-primary border-b-[3px] w-36 text-sm font-semibold tracking-wide">Profile d&apos;applicant</p>
                     </div>
                 </div>
                 <div className="w-11/12  mx-auto font-semibold">
@@ -181,8 +181,8 @@ export default function FreelancerPage() {
                         <div className="space-y-2">
                             <p className="text-gray-500">à propos</p>
                             <div className="font-semibold space-y-1">
-                                <p>I'm a product designer + filmmaker currently working remotely at Twitter from beautiful Manchester, United Kingdom. I'm passionate about designing digital products that have a positive impact on the world</p>
-                                <p>For 10 years, I've specialised in interface, experience & interaction design as well as working in user research and product strategy for product agencies, big tech companies & start-ups.</p>
+                                <p>I&apos;m a product designer + filmmaker currently working remotely at Twitter from beautiful Manchester, United Kingdom. I&apos;m passionate about designing digital products that have a positive impact on the world</p>
+                                <p>For 10 years, I&apos;ve specialised in interface, experience & interaction design as well as working in user research and product strategy for product agencies, big tech companies & start-ups.</p>
                             </div>
                         </div>
                     </div>
