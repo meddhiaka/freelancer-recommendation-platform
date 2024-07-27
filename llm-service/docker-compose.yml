@@ -1,0 +1,14 @@
+version: '3.8'
+
+services:
+  service-llm:
+    image: service-llm
+    container_name: service-llm
+    ports:
+      - "1337:1337"
+    networks:
+      - llm-network
+
+networks:
+  llm-network:
+    driver: bridge
