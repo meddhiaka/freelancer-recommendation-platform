@@ -203,8 +203,8 @@ export default async function FreelancerPage({ params }: { params: { id: string 
                                 <p className="text-gray-500">Skills</p>
                                 <div className="flex flex-row space-x-3 flex-wrap text-primary">
                                     {
-                                        profile?.skills.map((skill) => (
-                                            <p>{skill}</p>
+                                        profile?.skills.map((skill, index) => (
+                                            <p key={index}>{skill}</p>
                                         ))
                                     }
                                 </div>
