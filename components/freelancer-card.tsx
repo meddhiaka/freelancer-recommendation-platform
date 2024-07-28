@@ -26,7 +26,7 @@ export function FreelancerCard({ freelancer }: { freelancer: Mockup.ICard }) {
                     className="font-bold text-lg rounded-none text-primary"
                 >
                     <Link
-                        href="/profile/99"
+                        href={`/profile/${freelancer.id}`}
                         prefetch={true}>
                         Voir
                     </Link>

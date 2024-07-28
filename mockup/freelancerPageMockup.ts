@@ -49,4 +49,4 @@ const freelancerCards : Array<Mockup.ICard> = [
     }
 ]
 
-export default freelancerCards
+export default freelancerCards;
