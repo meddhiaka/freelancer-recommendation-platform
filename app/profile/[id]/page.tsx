@@ -13,7 +13,7 @@ import { findFreelancerProfile } from "@/lib/utils";
 export default async function FreelancerPage({ params }: { params: { id: string } }) {
     const profile: Mockup.IFreelancerProfile | null = await findFreelancerProfile(freelancerProfiles, params.id);
     return (
-        <div className="space-y-2 md:space-y-0 flex flex-row flex-wrap md:flex-nowrap max-w-5xl mx-auto space-x-4 my-2 md:h-[700px] py-4">
+        <div className="space-y-2 md:space-y-0 flex flex-row flex-wrap justify-center md:flex-nowrap max-w-5xl mx-auto space-x-4 my-2 md:h-[700px] py-4">
             <section className="max-w-md md:max-w-none mx-auto md:m-0 basis-full md:basis-1/3 border rounded-sm py-4 space-y-4">
                 <div className="w-9/12 mx-auto flex flex-row space-x-4">
                     <div>
@@ -132,7 +132,7 @@ export default async function FreelancerPage({ params }: { params: { id: string 
                 </div>
 
             </section>
-            <section className="max-w-md md:max-w-none basis-full md:basis-2/3 border rounded-sm space-y-4">
+            <section className="!ml-0 !mt-3 md:!mt-0 md:!ml-2 max-w-md md:max-w-none basis-full md:basis-2/3 border rounded-sm space-y-4">
                 <div className="border-b">
                     <div className="w-11/12 mx-auto ">
                         <p className="py-2 border-b-primary border-b-[3px] w-36 text-sm font-semibold tracking-wide">Profile d&apos;applicant</p>
