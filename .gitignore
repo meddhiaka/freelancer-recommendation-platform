@@ -1,4 +1,6 @@
 # See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+llm-service/__pycache__/*
+llm-service/.ipynb_checkpoints/*
 
 # dependencies
 /node_modules
