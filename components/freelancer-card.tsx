@@ -21,16 +21,14 @@ export function FreelancerCard({ freelancer }: { freelancer: Mockup.ICard }) {
                     alt="Picture of the freelancer"
                     className="rounded-full"
                 />
-                <Button
-                    variant="secondary"
-                    className="font-bold text-lg rounded-none text-primary"
-                >
-                    <Link
-                        href={`/profile/${freelancer.id}`}
-                        prefetch={true}>
-                        Voir
-                    </Link>
-                </Button>
+                <Link
+                    href={`/profile/${freelancer.id}`}
+                    prefetch={true}>
+                    <Button
+                        variant="secondary"
+                        className="font-bold text-lg rounded-none text-primary"
+                    >Voir</Button>
+                </Link>
             </CardHeader>
             <CardContent className="py-1 px-3">
                 <form>
